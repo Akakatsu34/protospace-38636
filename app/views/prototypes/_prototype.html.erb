@@ -1,0 +1,18 @@
+<div class="card">
+  <span class="card__img">
+    <a href="/prototypes/<%= prototype.id %>">
+      <%= image_tag prototype.image.variant(resize: '300x300' ) %>
+    </a>
+  </span>
+  <div class="card__body">
+    <a href="/prototypes/<%= prototype.id %>" class="card__title">
+      <%= prototype.title %>
+    </a>
+    <p class="card__summary">
+      <%= prototype.catch_copy %>
+    </p>
+    <a href="/users/<%= prototype.user.id %>" class="card__user">
+      <%= prototype.user.name %>
+    </a>
+  </div>
+</div>
